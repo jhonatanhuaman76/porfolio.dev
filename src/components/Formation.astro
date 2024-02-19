@@ -1,0 +1,30 @@
+---
+import FormacionItem from './FormationItem.astro';
+
+const FORMACION = [
+  {
+    date: '2023 - Actualidad',
+    title: 'Carrera Computación e Informática',
+    company: 'CIBERTEC',
+    description:
+      'Estudiante de segundo ciclo de la carrera de Computación e Informática en Cibertec. Activamente involucrado en la presentación de mejores proyectos.',
+  },
+  {
+    date: '2023 - Actualidad',
+    title: 'Carrera Computación e Informática',
+    company: 'CIBERTEC',
+    description:
+      'Estudiante de segundo ciclo de la carrera de Computación e Informática en Cibertec. Activamente involucrado en la presentación de mejores proyectos.',
+  },
+];
+---
+
+<ol class='relative border-s border-gray-200 dark:border-gray-700 ml-3'>
+  {
+    FORMACION.map((formacion) => (
+      <li class='mb-10 ms-4'>
+        <FormacionItem {...formacion} />
+      </li>
+    ))
+  }
+</ol>
